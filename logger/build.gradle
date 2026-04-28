@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.bibletranslationtools"
-version = "3.0.0"
+version = "3.0.1"
 
 kotlin {
     jvmToolchain(11)
@@ -20,17 +20,17 @@ kotlin {
         commonMain {
             dependencies {
                 implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0"
-                implementation 'io.ktor:ktor-client-core:3.4.2'
-                implementation 'io.ktor:ktor-client-okhttp:3.4.2'
-                implementation 'io.ktor:ktor-client-content-negotiation:3.4.2'
-                implementation 'io.ktor:ktor-serialization-kotlinx-json:3.4.2'
+                implementation 'io.ktor:ktor-client-core:3.4.3'
+                implementation 'io.ktor:ktor-client-okhttp:3.4.3'
+                implementation 'io.ktor:ktor-client-content-negotiation:3.4.3'
+                implementation 'io.ktor:ktor-serialization-kotlinx-json:3.4.3'
             }
         }
 
         commonTest {
             dependencies {
                 implementation(kotlin("test"))
-                implementation("io.ktor:ktor-client-mock:3.4.2")
+                implementation("io.ktor:ktor-client-mock:3.4.3")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
             }
         }
@@ -60,9 +60,9 @@ publishing {
         version = version
         pom {
             name = "Logger"
-            description = "A better logging tool for Android"
+            description = "A better logging tool"
             inceptionYear = "2025"
-            url = "https://github.com/bibletranslationtools/android-logger/"
+            url = "https://github.com/bibletranslationtools/kmp-logger/"
             licenses {
                 license {
                     name = "GNU GENERAL PUBLIC LICENSE, Version 2.0"
@@ -78,12 +78,12 @@ publishing {
                 }
             }
             scm {
-                url = "https://github.com/bibletranslationtools/android-logger/"
-                connection = "scm:git:git://github.com/bibletranslationtools/android-logger.git"
-                developerConnection = "scm:git:ssh://git@github.com/bibletranslationtools/android-logger.git"
+                url = "https://github.com/bibletranslationtools/kmp-logger/"
+                connection = "scm:git:git://github.com/bibletranslationtools/kmp-logger.git"
+                developerConnection = "scm:git:ssh://git@github.com/bibletranslationtools/kmp-logger.git"
             }
             issueManagement {
-                url = "https://github.com/bibletranslationtools/android-logger/issues"
+                url = "https://github.com/bibletranslationtools/kmp-logger/issues"
                 system = "github"
             }
         }

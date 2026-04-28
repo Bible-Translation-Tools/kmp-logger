@@ -1,7 +1,11 @@
-#Logger
+# Logger
 An advanced logging library that provides support for writing logs to a file and catching global application exceptions.
 
-##Installation
+## Supported Platforms
+* Android
+* Desktop (JVM)
+
+## Installation
 To use this library your Android project must be configured to use the Maven Central repositories.
 
 Add the following to your package dependencies and sync Gradle.
@@ -9,7 +13,7 @@ Add the following to your package dependencies and sync Gradle.
 implementation 'org.bibletranslationtools:logger:3.0.0'
 ```
 
-##Set up Global Exception Handler
+## Set up Global Exception Handler
 If you want to use the global exception handler then you should register it when your app starts.
 
 ```
@@ -18,7 +22,7 @@ Logger.registerGlobalExceptionHandler(pathToStacktraceDirectory);
 
 The argument is the directory path where you want stacktraces to be stored.
 
-##Set up Logger
+## Set up Logger
 The logger contains three levels of log detail
 
 * Info
@@ -33,7 +37,7 @@ Logger.configure(pathToLogFile, minimumAllowdLogLevel);
 
 The first argument gives the path to the log file that will be written to. The second argument is the lower log level that will be processed.
 
-##Usage
+## Usage
 The Logger is a singleton so to use it you simply call one of its static log methods
 
 ```
